@@ -1,0 +1,57 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+
+using namespace std;
+
+ 
+
+int main(){
+
+  string cadena;
+
+  int vocales=0, consonante=0;
+
+ 
+
+  cout<<"ingrese una palabra"<<endl;
+
+  cin>>cadena;
+
+ 
+
+ 
+
+  for(int i=0;i<cadena.length();i++){
+
+ 
+
+    if((cadena[i]=='a') || (cadena[i]=='e')|| (cadena[i]=='i') || (cadena[i]=='o')|| (cadena[i]=='u'))
+	{
+
+ 
+
+       vocales++;
+
+     }else
+
+      {
+
+       consonante++;}
+
+   }
+
+ 
+
+ 
+
+  cout<<"Existen "<<vocales<<" vocales y "<<consonante<<" consonantes"<<endl;
+
+ 
+
+  cin.get();
+
+  cin.get();
+
+return 0;}
